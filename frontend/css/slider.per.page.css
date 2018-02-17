@@ -1,0 +1,583 @@
+/* FONTS */
+/* Extra fonts needed for chronology*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+@font-face{
+	font-family: 'ptsans';
+	src: url('fonts/ptsans.woff2');
+}
+@font-face{
+	font-family: 'gillsans';
+	src: url('fonts/gillsans.woff');
+}
+/* Root font size (All element fonts will be relative to root using rem) */
+html {
+    font-size: 16px;
+overflow-x: hidden !important;
+}
+
+.section{
+	background-color: #fff;
+}
+
+.btn-primary{
+
+	white-space: pre-line;
+}
+
+.video{
+width: 50vw;
+max-width: 950px;
+border: 12px solid white;
+}
+.videoCaption{
+	max-width: 950px;
+	width: 50vw;
+	margin: auto;
+}
+.videoCaption p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+	    word-break: break-word;
+}
+/* Main Intro/Info Section */
+.francis_bacon {
+  font-size: 3.75rem;
+  font-family: "gillsans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  z-index: 467;
+  letter-spacing: 2px;
+	word-break: break-all;
+}
+/*Generic Date Title Text*/
+.dateTitle{
+  font-size: 3.75rem;
+  font-family: "gillsans";
+  font-weight: bold;
+  line-height: 1;
+  z-index: 398;
+}
+
+.contents-container, .lightboxTextContainerTable>p, .videoCaption>p{
+	text-shadow: 0px 0px 16px black !important;
+}
+
+@media only screen and (max-width: 560px) {
+.francis_bacon {
+font-size: 2.7rem;
+}
+}
+
+p{
+  font-size: 1.75rem;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.714;
+  z-index: 396;
+}
+/* BACKGROUND IMAGES*/
+/* Fixed Background When more than one page has same background Image */
+
+.lightboxTextContainerTable{
+	display: table;
+	height: 100%;
+    width: 100%;
+}
+.lightboxTextContainerTable p{
+	display: table-cell;
+	vertical-align: middle;
+    text-align: center;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.modal-content .row.is-flex{ 
+	display: flex;
+	flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.row.is-flex.container:before,
+.row.is-flex.container:after,
+.row.is-flex.row:before,
+.row.is-flex.row:after {
+   content: normal; 
+}
+
+.fixedBG{
+	background-attachment: fixed;
+}
+/*Setting background image*/
+.fpBackgroundImg{
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+/* Slider Image */
+.image{
+  max-height: 50vh;
+  max-width: 50vw;
+  border: 7px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.58);
+    background-color: white;
+}
+/* Slider Image inside bootstrap lightbox when opened */
+.lightbox-image{
+  max-height: 100%;
+  max-width: 100%;
+  border: 7px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.58);
+}
+.image-frame{	text-align: center; }
+/* Common Line under titles */
+hr{
+  width: 75px;
+	border-top: 2.5px solid;
+}
+/* SLIDER BUTTONS */
+.btn-over-image{
+	white-space: normal !important;
+}
+.btn-holder{
+	position: relative;
+	margin-top: 18px;
+}
+/* Button for slider image lightbox*/
+.btn-over-image{
+  background-color: rgba(0,0,0,.7);
+  border-color: transparent;
+  border-radius: 1px;
+  display: inline-block;
+  border: 0px;
+  padding: 0px;
+  color: white;
+}
+/* Texts in buttom of slider */
+.btn-over-image span{
+  text-transform: uppercase;
+  margin: 0px 26px;
+  font-family:  'PT Sans', sans-serif;
+  line-height: 1.071;
+  letter-spacing: 1px;
+}
+/* Button over Slider Image Interaction with mouse */
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{outline: none;}
+button.btn-over-image:hover{box-shadow: 3px 4px 6px black; color: white;}
+button.btn-over-image:focus{outline: none; background-color: rgba(0,0,0,.7); color: white;}
+button.btn-over-image:active{	outline: none;	border: none; background-color: rgba(0,0,0,.7); color: white;}
+
+
+/* Slider btn arrow image/svg */
+.image-btn{
+  height: 33px;
+  width: 45px;
+  padding: 7px;
+}
+.imgBtn_backgroundColor{
+	display: inline;
+}
+
+/*TITLE PAGE of each decades*/
+.decadeTitle{
+color: white;
+font-size: 3.75rem;
+font-family: "gillsans";
+font-weight: bold;
+line-height: 1;
+text-align: center;
+z-index: 467;
+letter-spacing: 2px;
+}
+
+/*Styleing for LIGHTBOX/MODAL of Bootstrap*/
+.modal{
+transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.modal-dialog{
+margin: 0px;  min-height 100vh; min-width: 100vw;
+}
+/*full-page modal container for bootstrap lightbox*/
+.modal-content{
+  border: none;
+	border-radius: 0px;
+	min-height: 100vh;
+	min-width: 100vw;
+  display: table;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,.9);
+  transition: opacity .6s ease;
+}
+.modal-body{
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  min-height: 100vh;
+}
+.table-container{
+width: 100%;
+}
+button:focus {outline:0;}
+button.close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 23343;
+  /*font-size: 50px;*/
+  font-weight: 100;
+	display: block;
+	background-color: white;
+	opacity: 0.6;
+}
+button.close:hover{
+  background-color: black;
+  color: white;
+}
+button.close:active {
+    outline:none;
+}
+button.close>span{
+  display: block;
+      line-height: 0px;
+	 /* padding: 20px 7px;*/
+	 padding: 20px 10px;
+}
+/*Inside lightbox */
+.lightbox-text {
+  font-size: 1.75rem;
+  font-family:  'PT Sans', sans-serif;
+  font-weight: bold;
+  line-height: 1.714;
+  z-index: 396;
+}
+.lightbox-image-frame{
+	text-align: center;
+}
+/*Slider smoother Fade*/
+.modal.fade .modal-dialog{
+  transform: unset;
+  transition: unset;
+}
+.modal.in .modal-dialog{
+  transform: unset;
+  transition: unset;
+}
+.elevator{
+	display: block;
+    position: absolute;
+    bottom: 0px;
+	right: 10px;
+    line-height: 0;
+    margin: 0;
+    padding: 10px;
+	cursor: pointer;
+}
+.elevator>i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+
+/*QUOTES Section*/
+.quotes  h2{
+	/*text-shadow: rgb(134, 134, 134) 1px 1px 1px;*/
+	    font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+.quotes h2:before{ content: open-quote; }
+.quotes h2::after{ content: close-quote;}
+.quotes p{
+	/*text-shadow: rgb(134, 134, 134) 1px 1px 1px;*/
+  font-size: 1rem;
+}
+.titleSection{
+	transition: background-color 0.8s ease-in;
+}
+.chronology-generic-container{
+	text-align: center;
+}
+/*Lazy loading smooth display*/
+img{
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+div{
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+img[data-src2]{
+	opacity: 0;
+}
+div[data-bg]{
+	opacity: 0;
+}
+	
+
+.sidenav {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.mobileNav{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	z-index: 0;
+	border-radius: 0px;
+	transition: background-color 0.8s ease-in;
+}
+.mobileNav > span{
+	background-color: white;
+}
+.mobileNav:hover>span{
+	background-color: white;
+}
+	/*Navigation*/
+.chronology-nav{
+	  position: fixed;
+	  z-index: 100;
+	  top: 0%;
+	  right: 0%;
+	  height: 100vh !important;
+	  transition: background-color 0.8s ease-in;
+	 /* text-shadow: rgb(0, 0, 0) 0px 1px 3px;*/
+	}
+
+.chronology-nav-ul{
+	  display: table-cell;
+	  vertical-align: middle;
+	  padding-left: 0px;
+	}
+.chronology-nav-ul> li:first-child{
+	  text-transform: uppercase;
+	}
+.chronology-nav-ul-li{
+	  width: 71px;
+	  margin-top: 30px;
+	  height: unset;
+	  list-style: none;
+	  text-align: center;
+	}
+.chronology-nav-ul-li a{ color: white; }
+li.chronology-nav-ul-li.active > a > span{
+	  margin: inherit;
+	  border-bottom: 1.5px solid white;
+	  font-weight: bold;
+	}
+.chronology-nav-ul-li a span{
+	  font-size: 1.125rem;
+	  border-radius: 0px !important;
+	  padding: 6px;
+		font-family: gillsans;
+	}
+.chronology-nav
+li.chronology-nav-ul-li > a >span:hover{
+	  margin: inherit;
+	  border-bottom: 1.5px solid white;
+	  font-weight: bold;
+	}
+li.chronology-nav-ul-li > a:hover{
+	  text-decoration: none;
+	}
+li { cursor: pointer; cursor: hand; }
+li[data-anchorname="intro"]{
+	text-transform: uppercase;
+}
+.chronology-nav .chronology-close-btn{
+	display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Nav hides text so need margin between these 2 width */
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+	.contents-container, .quotes{
+		margin-right: 72px;
+	}
+	.left-container{
+		margin-right: 0px;
+	}
+}
+
+/* What to do on mobile screen */
+@media only screen and (max-width: 768px) { 
+
+.fixedBG{
+	background-attachment: scroll;
+}
+.mobileNav{
+		display: block;
+	}
+.chronology-nav .chronology-close-btn{
+	display: block;
+	position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.chronology-nav{
+	display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.5s, background-color 0.8s ease-in;
+	}
+.chronology-nav-ul{
+	height: 100vh;
+	margin: auto;
+}
+.chronology-nav-ul-li {
+	margin-top: 14px;
+}
+.chronology-nav a{
+    transition: 0.3s;
+	color: white;
+}
+
+	html{	font-size: 14px; }
+	.video, .videoCaption{	width: 90vw;	}
+	.translate-customTranslate{
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	/* Center the slider image section when view-width is small*/
+	.widget-sliding{text-align: center;	}
+	.row.is-flex > [class*='col-'] {
+		width: 100%;
+	}
+    .lightboxTextContainerTable p{
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+	.quotes  h2{
+		font-size: 22px;
+	}
+	.quotes p{
+		font-size: 14px;
+	}
+
+.modal-content, .modal-dialog, .modal-body{
+	max-width: 100vw;
+/*	min-width: unset;*/
+}
+body, .modal-open .modal{
+	padding-right: 0px !important;
+}
+
+.col-md-6, .col-sm-6{
+	width: 100%;
+}
+p{
+	text-align: center;
+}
+}
+
+/* fullpage.js, navigation and sliding will only be avaiable after 768px */
+@media only screen and (min-width: 769px) {
+		.elevator{
+		right: 80px;
+	}
+	.chronology-nav{
+		display: table !important;
+		min-width: 71px;
+	}
+/**Image Slider CSS */
+/*Main Wraper of sliding */
+.widget-sliding {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+/*Image holder in this wrapper*/
+.widget-sliding>.image-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: visibility 1s, transform 1s ease, opacity 1s ease;
+    }
+/*Need for vertical alignment to bottom or top */
+.widget-sliding>.image-holder:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+.translate-customTranslate{ text-align: right; }
+.translate-customTranslate> .image-frame{
+	  vertical-align: top;
+	  transform: translate(50%, -50%);
+  }
+/*image frame holder*/
+.widget-sliding>.image-holder  .image-frame {
+  pointer-events: all;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 2;
+  }
+
+
+
+}
+
