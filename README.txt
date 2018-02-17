@@ -1,0 +1,1 @@
+This is a plugin that creates slider per page and image slides per mouse scroll. It is build on top of fullpagejs, bootstrap and jquery. the data need for input are all written in javascript and all frontend are created in javascript plugin. read more in data folder to use it.
